@@ -14,26 +14,24 @@ import { Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <Nav />
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/account">
-            <Account />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/products">
-            <Products />
-          </Route>
-        </Switch>
-      </div>
+      <Nav />
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/account">
+          <Account />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/products">
+          <Products />
+        </Route>
+      </Switch>
     </div>
   );
 }

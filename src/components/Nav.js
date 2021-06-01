@@ -4,28 +4,30 @@ import logo from "../images/logo.png";
 
 const Nav = () => {
   return (
-    <Bar>
-      <div className="logo">
-        <img src={logo} alt="logo" />
-      </div>
-      <ul>
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
-        <li>
-          <Link to="/products">Products</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/account">Account</Link>
-        </li>
-      </ul>
-    </Bar>
+    <div className="container">
+      <Bar>
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <ul>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/products">Products</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/account">Account</Link>
+          </li>
+        </ul>
+      </Bar>
+    </div>
   );
 };
 
