@@ -15,6 +15,14 @@ import exclusive from "../images/exclusive.png";
 import user1 from "../images/user-1.png";
 import user2 from "../images/user-2.png";
 import user3 from "../images/user-3.png";
+import logoCoke from "../images/logo-coca-cola.png";
+import logoGodrej from "../images/logo-godrej.png";
+import logoOppo from "../images/logo-oppo.png";
+import logoPaypal from "../images/logo-paypal.png";
+import logoPhilips from "../images/logo-philips.png";
+import appStore from "../images/app-store.png";
+import playStore from "../images/play-store.png";
+import logoWhite from "../images/logo-white.png";
 import { Link } from "react-router-dom";
 import { FaQuoteLeft } from "react-icons/fa";
 
@@ -39,7 +47,7 @@ const Testimonial = (props) => {
 
 const Home = () => {
   return (
-    <>
+    <Page>
       <Header>
         <div className="container">
           <Content>
@@ -125,11 +133,141 @@ const Home = () => {
           <Testimonial name="Mabel Joe" src={user3} />
         </div>
       </Featured>
-    </>
+      <div className="container">
+        <div className="brands">
+          <div className="img-container">
+            <img src={logoCoke} alt="coca-cola" />
+          </div>
+          <div className="img-container">
+            <img src={logoGodrej} alt="godrej" />
+          </div>
+          <div className="img-container">
+            <img src={logoOppo} alt="oppo" />
+          </div>
+          <div className="img-container">
+            <img src={logoPaypal} alt="paypal" />
+          </div>
+          <div className="img-container">
+            <img src={logoPhilips} alt="philips" />
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div className="download-links sec">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and iOS Mobile Phone</p>
+          <div className="links">
+            <div className="img-container">
+              <img src={appStore} alt="app-store" />
+            </div>
+            <div className="img-container">
+              <img src={playStore} alt="play-store" />
+            </div>
+          </div>
+        </div>
+        <div className="purpose sec">
+          <div className="img-container">
+            <img src={logoWhite} alt="logo-white" />
+          </div>
+          <p>
+            Our Purpose is to Make the Pleasure and Benefits of Sports
+            Accessible to Many
+          </p>
+        </div>
+        <div className="useful-links sec">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div className="social sec">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </footer>
+    </Page>
   );
 };
 
 export default Home;
+
+const Page = styled.div`
+  .brands {
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    .img-container {
+      img {
+        cursor: pointer;
+        filter: grayscale(100%);
+        :hover {
+          filter: none;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: right;
+    background: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px;
+    img {
+      width: 100%;
+    }
+    h3 {
+      color: white;
+      margin-bottom: 20px;
+    }
+    .sec {
+      text-align: center;
+      min-width: 250px;
+      margin-bottom: 20px;
+      flex-basis: 12%;
+      ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    p,
+    .download-links {
+      flex-basis: 30%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      .links {
+        display: flex;
+      }
+    }
+    .img-container {
+      width: 140px;
+      margin: 3px;
+    }
+    .purpose {
+      flex: 1;
+      * {
+        text-align: center;
+      }
+      .img-container {
+        width: 180px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+`;
 
 const Header = styled.div`
   background: radial-gradient(#fff, #ffd6d6);
@@ -146,7 +284,6 @@ const Header = styled.div`
 `;
 
 const Content = styled.div`
-  margin-top: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
