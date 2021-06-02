@@ -1,4 +1,4 @@
-# Use My Tech (Reworked)
+RedStore
 
 ### Summary
 E-Commerce landing page rebuilt with react.
