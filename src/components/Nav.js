@@ -11,19 +11,19 @@ const Nav = () => {
         </div>
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/">Products</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/">About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/">Contact</Link>
           </li>
           <li>
-            <Link to="/account">Account</Link>
+            <Link to="/">Account</Link>
           </li>
         </ul>
       </Bar>

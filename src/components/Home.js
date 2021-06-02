@@ -54,7 +54,7 @@ const Home = () => {
                 <br />
                 hard work gains success. Greatness will come.
               </p>
-              <Link to="/products" className="cta">
+              <Link to="/" className="cta">
                 Explore Now &#8594;
               </Link>
             </div>
@@ -111,7 +111,7 @@ const Home = () => {
                 AMOLED color full-touch display with adjustable brightness, so
                 everything is clear as can be.
               </small>
-              <Link to="/products" className="cta">
+              <Link to="/" className="cta">
                 Buy Now &#8594;
               </Link>
             </div>
