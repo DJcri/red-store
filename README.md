@@ -1,4 +1,4 @@
-RedStore
+RedStore Landing Page
 
 ### Summary
 E-Commerce landing page rebuilt with react.
