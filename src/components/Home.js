@@ -205,6 +205,10 @@ const Page = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 60px auto;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+    }
     .img-container {
       img {
         cursor: pointer;
@@ -222,6 +226,17 @@ const Page = styled.div`
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      h3 {
+        text-align: center;
+      }
+      .links {
+        justify-content: center;
+      }
+    }
     img {
       width: 100%;
     }
@@ -303,6 +318,10 @@ const Content = styled.div`
     padding: 50px 0;
   }
   .cta {
+    @media (max-width: 800px) {
+      display: block;
+      width: fit-content;
+    }
     margin-top: 20px;
     display: inline-block;
     background: #ff523b;
@@ -315,11 +334,17 @@ const Content = styled.div`
       background: #563434;
     }
   }
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const Featured = styled.div`
   margin: 70px 0;
   .container {
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
     display: flex;
     justify-content: space-between;
     max-width: 1080px;
