@@ -205,7 +205,7 @@ const Page = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 60px auto;
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       flex-direction: column;
       align-items: center;
     }
@@ -226,7 +226,7 @@ const Page = styled.div`
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px;
-    @media (max-width: 800px) {
+    @media (max-width: 1400px) {
       flex-direction: column;
       text-align: center;
       align-items: center;
